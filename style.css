@@ -20,21 +20,20 @@ body {
     padding: 40px 0 20px 0;
 }
 
-nav ul{
-    display: flex;
-    padding: 0 300px;
-}
-nav ul li {
+nav, nav ul, nav ul li {
+    display: inline;
     list-style: none;
+}
+
+nav ul, nav ul li a  {
+    text-decoration: none;
+    display: inline-block;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 0px 10px;
     margin: 10px;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: aliceblue;
-    font-weight: bold;
-    justify-content: center;
-}
 
 .footer{
     text-align: center;
@@ -437,4 +436,50 @@ h5 {
 
 .beneficios p {
     padding: 10px 0px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul, nav ul li a  {
+        padding: 0px 100px;
+        margin: 10px;
+    }
+
+    .introduccion img {
+        width: 800px;
+    }
+
+    .textoIntro {
+        position: absolute;
+        text-align: center;
+        top: 600px;
+      }
+    
+    .textoIntro h1 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #FFF;
+    }
+
+    .s1ControlPrenatal, .psicoprofilaxis {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .s1ControlPrenatal img, .psicoprofilaxis img {
+        width: 200px;
+        padding: 0px 15px 15px 0px;
+    }
+
+    .beneficios {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
 }
