@@ -40,6 +40,7 @@ nav ul li a{
     text-align: center;
     background-color: rgba(209, 100, 181, 1);
     color: #FFF;
+    padding: 20px;
 }
 
 .introduccion{
@@ -160,18 +161,18 @@ p {
     line-height: 16px;
 }
 
-.s1ControlPrenatal{
+.s1ControlPrenatal, .psicoprofilaxis {
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
 
-.s1ControlPrenatal div {
+.s1ControlPrenatal div, .psicoprofilaxis div {
     width: 250px;
 }
 
-.s1ControlPrenatal img {
+.s1ControlPrenatal img, .psicoprofilaxis img {
     width: 200px;
     padding: 0px 15px 0px 0px;
 }
@@ -237,14 +238,14 @@ h5 {
     width: 50%;
 }
 
-.controles {
+.controles, .controlRegular {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 0px 0px 20px 0px;
 }
 
-.controles div {
+.controles div, .controlRegular div {
     background-color: rgba(255, 221, 223, 1);
     border: 1px solid rgba(255, 181, 184, 1);
     border-radius: 15px;
@@ -263,7 +264,11 @@ h5 {
     padding-right: 10px;
 }
 
-.consultas {
+.controlRegularImg {
+    padding-right: 10px;
+}
+
+.consultas, .anemia {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -272,51 +277,164 @@ h5 {
 
 .consultas div {
     width: 200px;
+    height: 250px;
     background-color: rgba(164, 232, 224, 1);
-    border: 1px solid red;
+    margin: 0px 10px;
+    padding: 20px 10px;
 }
 
-.section3, .section5 {
+.anemia div {
+    width: 200px;
+    height: 250px;
+    background-color: rgba(251, 227, 157, 1);
+    border: 1px solid rgba(255, 187, 60, 1);
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 20px 10px;
+}
+
+.consultas img, .anemia img {
+    margin: 30px 0px 20px 0px;
+    height: 100px;
+}
+
+.signoalarma1 {
     display: flex;
     flex-direction: row;
-    text-align: left;
-}
-.section3 img, .section5 img {
-    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
 }
 
-.anemia, .descartes, .alimentacion {
+.signoalarma1 img {
+    width: 180px;
+    padding-right: 10px;
+}
+
+.signoalarma1 div p {
+    margin: 10px 0px;
+}
+
+.tarjeta1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tarjeta1 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(251, 227, 157, 1);
+    width: 180px;
+    height: 180px;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.tarjeta1 img {
+    width: 80px;
+}
+
+.pruebaDescarte {
     display: flex;
     flex-direction: row;
     text-align: center;
 }
 
-.consultas img {
+.pruebaDescarteNegativa, .pruebaDescartePositivo {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 25px;
+}
+
+.pruebaDescarteNegativa div {
+    border: 1px solid rgba(66, 229, 210, 1);
+    background-color: rgba(255, 255, 248, 1);
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.pruebaDescartePositivo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    height: 410px;
+    background-color: rgba(255, 255, 248, 1);
+    border: 1px solid rgba(66, 229, 210, 1);
+}
+
+.pruebaDescartePositivo p {
+    margin: 10px 0px;
+}
+
+.cuidarAlimentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cuidarAlimentacion img {
+    width: 250px;
+    padding: 0px 20px 0px 0px;
+}
+
+.alimentacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.alimentacion div {
+    background-color: rgba(197, 229, 165, 1);
+    border-radius: 15px;
     width: 200px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.pruebaDescarteNegativa img, .pruebaDescartePositivo img {
+    width: 100px;
+    padding: 0px 15px 0px 10px;
 }
 
 .PreguntasFrecuentes div {
-    display: flex;
-    flex-direction: column;
-}
-
-.tarjeta1 {
-    width: 100px;
-    padding: 10px;
-}
-
-.signos1 div,.signos2 div {
     display: flex;
     flex-direction: row;
 }
 
 .beneficios {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .beneficios div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
     width: 200px;
-    padding: 100px 20px;
+    height: 200px;
+    background-color: rgba(252, 249, 244, 1);
+    border: 1px solid rgba(223, 177, 96, 1);
+}
+
+.beneficios img {
+    padding: 20px 0px;
+    width: 50px;
+}
+
+.beneficios p {
+    padding: 10px 0px;
 }
