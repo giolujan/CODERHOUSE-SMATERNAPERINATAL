@@ -8,16 +8,21 @@ body {
     font-family: 'Arimo', sans-serif;
 }
 
+hr {
+    background-color:white;
+    align-items: center;
+  }
+
 .menu {
     background-color: rgba(209, 100, 181, 1);
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .menu img {
-    width: 250px;
-    padding: 40px 0 20px 0;
+    width: 240px;
+    padding: 60px 0 10px 0;
 }
 
 nav, nav ul, nav ul li {
@@ -31,36 +36,46 @@ nav ul, nav ul li a  {
     color: aliceblue;
     font-weight: bold;
     padding: 0px 10px;
-    margin: 10px;
 }
 
+nav ul {
+    margin: 10px 0px 30px 0px;
+}
 
-.footer{
-    text-align: center;
+footer {
     background-color: rgba(209, 100, 181, 1);
     color: #FFF;
     padding: 20px;
 }
 
-.introduccion{
+.footerContenido {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.footerContenido div {
+    width: 500px;
+    text-align: left;
+}
+
+.intro{
+    position: relative;
+    display: block;
     max-width: 100%;
     max-height: 600px;
     overflow: hidden;
 }
 
-.introduccion img{
-    position: relative;
-    width: 100%;
-    height: 600px;
-    z-index: -1;
+.intro img {
+    max-width: 1600px;
 }
 
 .textoIntro {
     position: absolute;
-    top: 350px;
-    left: 100px;
+    top: 50px;
+    left: 50px;
     width: 50%;
-    z-index: 0;
   }
 
 .textoIntro h1 {
@@ -180,7 +195,6 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    
 }
 
 .objetivos div {
@@ -481,5 +495,36 @@ h5 {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .footerContenido {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .objetivos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .controles, .controlRegular {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .consultas, .anemia {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .consultas div {
+        margin: 10px;
+    }
+
+    .divisor, .divisor1 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
 
 }
