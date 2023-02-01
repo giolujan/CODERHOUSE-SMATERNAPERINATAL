@@ -1,0 +1,49 @@
+footer {
+    background-color: nth($bg-color, 1);
+    color: #FFF;
+    padding: 1em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footerContenido {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+
+        div {
+            width: 500px;
+            text-align: left;
+            padding: 1em;
+                
+        }
+    }
+}
+
+.buttonCall {
+    margin: 10px 10px;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(165, 128, 206, 1);
+    font-weight: 500;
+    border-radius: 15px;
+    border: none;
+    color: white;
+
+    &:hover {
+        cursor: pointer;
+        background-color: black;
+    }
+}
+
+@media screen and (max-width:480px) {
+    footer {
+        .footerContenido {
+            flex-direction: column;
+            div {
+                width: auto;
+            }
+        }
+    }
+}

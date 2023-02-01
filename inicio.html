@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="main.js" type="module"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <div class="menu">
+        <div class="logo">
             <a href="index.html"><img src="img/minsa.png" alt="Minsa"></a>
-            <nav>
-                <ul>
-                    <li><a href="inicio.html">INICIO</a></li>
-                    <li><a href="controlPrenatal.html">CONTROL PRENATAL</a></li>
-                    <li><a href="Signosdealarma.html">SIGNOS DE ALARMA</a></li>
-                    <li><a href="anemia.html">ANEMIA EN LA GESTACIÓN</a></li>
-                    <li><a href="psicoprofilaxis.html">PSICOPROFILAXIS EN LA GESTACIÓN</a></li>
-                </ul>
-            </nav>
         </div>
+        <button class="button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav">
+            <ul class="ul">
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="controlPrenatal.html">CONTROL PRENATAL</a></li>
+                <li><a href="Signosdealarma.html">SIGNOS DE ALARMA</a></li>
+                <li><a href="anemia.html">ANEMIA EN LA GESTACIÓN</a></li>
+                <li><a href="psicoprofilaxis.html">PSICOPROFILAXIS EN LA GESTACIÓN</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="intro">
+    <div class="intro">
         <img src="img/inicio/Fondo1.jpg" alt="">
         <div class="textoIntro">
             <h1>Selecciona la Dirección de Red de Salud (DIRIS) a la que perteneces</h1>
@@ -37,109 +44,113 @@
                 </select>
             </div>
         </div>
-    </section>
+    </div>
     <main>
-        <section class="contenido">
-            <div>
-                <h2>Actividades</h2>
-                <div class="actividades">
-                    <button class="botonFlecha"><span class="material-symbols-outlined">arrow_back_ios</span></button>
-                    <div class="contenedor">
-                        <div class="contenedorImg">
-                            <img src="img/inicio/actividad1.png" alt="">
-                            <button class="contenedorBoton" href="">VER MÁS</button>
-                        </div>
-                        <h3 class="contenedorTitulo">Semana de la maternidad saludable, segura y voluntaria</h3>
-                        <p class="contenedorDescripcion">Conmemorando esta iniciativa, el hospital María Auxiliadora,
-                            através dee laa unidad funcional de obstetricia del departamento..</p>
-                        <p class="contenedorFecha">20 de mayo de 2022</p>
+        <section>
+            <h2>Actividades</h2>
+            <div class="actividades">
+                <button class="botonFlecha"><span class="material-symbols-outlined">arrow_back_ios</span></button>
+                <div class="contenedor1">
+                    <div class="contenedorImg">
+                        <img src="img/inicio/actividad1.png" alt="">
+                        <button class="contenedorBoton" href="">VER MÁS</button>
                     </div>
-                    <div class="contenedor">
-                        <div class="contenedorImg">
-                            <img src="img/inicio/actividad2.png" alt="">
-                            <button class="contenedorBoton" href="">VER MÁS</button>
-                        </div>
-                        <h3 class="contenedorTitulo">Mañana habrá campaña de desparasitación gratuita</h3>
-                        <p class="contenedorTitulo">Sumándose a las actividades de la segunda etapa nacional de la campaña
-                            de desparasitación “Gánale a los parásitos”...</p>
-                        <p class="contenedorTitulo">05 de mayo de 2022</p>
-                    </div>
-                    <div class="contenedor">
-                        <div class="contenedorImg">
-                            <img src="img/inicio/actividad3.png" alt="">
-                            <button class="contenedorBoton" href="">VER MÁS</button>
-                        </div>
-                        <h3 class="contenedorTitulo">Se inició vacunación contra el covid-19 a menores de 5 años</h3>
-                        <p class="contenedorTitulo">Este grupo poblacional recibirá dos dosis de la vacuna ANR Mensajero (mARN)
-                            Spikevax del Laboratorio Moderna, cada ...</p>
-                        <p class="contenedorTitulo">05 de febrero de 2022</p>
-                    </div>
-                    <button class="botonFlecha"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                    <h3 class="contenedorTitulo">Semana de la maternidad saludable, segura y voluntaria</h3>
+                    <p class="contenedorDescripcion">Conmemorando esta iniciativa, el hospital María Auxiliadora,
+                        através dee laa unidad funcional de obstetricia del departamento..</p>
+                    <p class="contenedorFecha">20 de mayo de 2022</p>
                 </div>
-                <h2>Noticias</h2>
-                <div class="noticias">
-                    <button class="botonFlecha"><span class="material-symbols-outlined">arrow_back_ios</span></button>
-                    <div class="contenedor">
-                        <div class="contenedorImg">
-                            <img src="img/inicio/actividad1.png" alt="">
-                            <button class="contenedorBoton" href="">VER MÁS</button>
-                        </div>
-                        <h3 class="contenedorTitulo">Semana de la maternidad saludable, segura y voluntaria</h3>
-                        <p class="contenedorDescripcion">Conmemorando esta iniciativa, el hospital María Auxiliadora,
-                            através dee laa unidad funcional de obstetricia del departamento..</p>
-                        <p class="contenedorFecha">20 de mayo de 2022</p>
+                <div class="contenedor2">
+                    <div class="contenedorImg">
+                        <img src="img/inicio/actividad2.png" alt="">
+                        <button class="contenedorBoton" href="">VER MÁS</button>
                     </div>
-                    <div class="contenedor">
-                        <div class="contenedorImg">
-                            <img src="img/inicio/actividad2.png" alt="">
-                            <button class="contenedorBoton" href="">VER MÁS</button>
-                        </div>
-                        <h3 class="contenedorTitulo">Mañana habrá campaña de desparasitación gratuita</h3>
-                        <p class="contenedorTitulo">Sumándose a las actividades de la segunda etapa nacional de la campaña
-                            de desparasitación “Gánale a los parásitos”...</p>
-                        <p class="contenedorTitulo">05 de mayo de 2022</p>
-                    </div>
-                    <div class="contenedor">
-                        <div class="contenedorImg">
-                            <img src="img/inicio/actividad3.png" alt="">
-                            <button class="contenedorBoton" href="">VER MÁS</button>
-                        </div>
-                        <h3 class="contenedorTitulo">Se inició vacunación contra el covid-19 a menores de 5 años</h3>
-                        <p class="contenedorTitulo">Este grupo poblacional recibirá dos dosis de la vacuna ANR Mensajero (mARN)
-                            Spikevax del Laboratorio Moderna, cada ...</p>
-                        <p class="contenedorTitulo">05 de febrero de 2022</p>
-                    </div>
-                    <button class="botonFlecha"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                    <h3 class="contenedorTitulo">Mañana habrá campaña de desparasitación gratuita</h3>
+                    <p class="contenedorTitulo">Sumándose a las actividades de la segunda etapa nacional de la campaña
+                        de desparasitación “Gánale a los parásitos”...</p>
+                    <p class="contenedorTitulo">05 de mayo de 2022</p>
                 </div>
+                <div class="contenedor3">
+                    <div class="contenedorImg">
+                        <img src="img/inicio/actividad3.png" alt="">
+                        <button class="contenedorBoton" href="">VER MÁS</button>
+                    </div>
+                    <h3 class="contenedorTitulo">Se inició vacunación contra el covid-19 a menores de 5 años</h3>
+                    <p class="contenedorTitulo">Este grupo poblacional recibirá dos dosis de la vacuna ANR Mensajero
+                        (mARN)
+                        Spikevax del Laboratorio Moderna, cada ...</p>
+                    <p class="contenedorTitulo">05 de febrero de 2022</p>
+                </div>
+                <button class="botonFlecha"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
             </div>
-        </section>     
+        </section>
+        <section>
+            <h2>Noticias</h2>
+            <div class="noticias">
+                <button class="botonFlecha"><span class="material-symbols-outlined">arrow_back_ios</span></button>
+                <div class="contenedor1">
+                    <div class="contenedorImg">
+                        <img src="img/inicio/actividad1.png" alt="">
+                        <button class="contenedorBoton" href="">VER MÁS</button>
+                    </div>
+                    <h3 class="contenedorTitulo">Semana de la maternidad saludable, segura y voluntaria</h3>
+                    <p class="contenedorDescripcion">Conmemorando esta iniciativa, el hospital María Auxiliadora,
+                        através dee laa unidad funcional de obstetricia del departamento..</p>
+                    <p class="contenedorFecha">20 de mayo de 2022</p>
+                </div>
+                <div class="contenedor2">
+                    <div class="contenedorImg">
+                        <img src="img/inicio/actividad2.png" alt="">
+                        <button class="contenedorBoton" href="">VER MÁS</button>
+                    </div>
+                    <h3 class="contenedorTitulo">Mañana habrá campaña de desparasitación gratuita</h3>
+                    <p class="contenedorTitulo">Sumándose a las actividades de la segunda etapa nacional de la campaña
+                        de desparasitación “Gánale a los parásitos”...</p>
+                    <p class="contenedorTitulo">05 de mayo de 2022</p>
+                </div>
+                <div class="contenedor3">
+                    <div class="contenedorImg">
+                        <img src="img/inicio/actividad3.png" alt="">
+                        <button class="contenedorBoton" href="">VER MÁS</button>
+                    </div>
+                    <h3 class="contenedorTitulo">Se inició vacunación contra el covid-19 a menores de 5 años</h3>
+                    <p class="contenedorTitulo">Este grupo poblacional recibirá dos dosis de la vacuna ANR Mensajero
+                        (mARN)
+                        Spikevax del Laboratorio Moderna, cada ...</p>
+                    <p class="contenedorTitulo">05 de febrero de 2022</p>
+                </div>
+                <button class="botonFlecha"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footerContenido">
             <div>
-                <p>Para más información sobre:<p>
+                <p>Para más información sobre:
+                <p>
                 <p class="footerTitulo">Maternidad saludable, segura y voluntaria</p>
                 <hr width="100%">
-                <button>Llamar gratis <i class="fa-solid fa-phone"></i> al 113</button>
+                <button class="buttonCall">Llamar gratis <i class="fa-solid fa-phone"></i> al 113</button>
             </div>
             <div>
                 <hr width="100%">
-                <p>Oficina de Gestión de Tecnología de la Información</p> 
+                <p>Oficina de Gestión de Tecnología de la Información</p>
                 <hr width="100%">
                 <p>Área de Desarrollo de Sistemas</p>
             </div>
             <div>
                 <hr width="100%">
-               <p> Central Telefónica: <br>
-                (+51) 477 5360 <br>
-                (+51) 477 5770 <br>
-                (+51) 477 3077<br>
-                Opción " 0 "<br>
-                ó Anexo 2191 </p>
+                <p> Central Telefónica: <br>
+                    (+51) 477 5360 <br>
+                    (+51) 477 5770 <br>
+                    (+51) 477 3077<br>
+                    Opción " 0 "<br>
+                    ó Anexo 2191 </p>
             </div>
         </div>
         <hr width="100%">
         <p>©Todos los derechos reservados 2022</p>
     </footer>
 </body>
+
 </html>

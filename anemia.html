@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="main.js" type="module"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <div class="menu">
+        <div class="logo">
             <a href="index.html"><img src="img/minsa.png" alt="Minsa"></a>
-            <nav>
-                <ul>
-                    <li><a href="inicio.html">INICIO</a></li>
-                    <li><a href="controlPrenatal.html">CONTROL PRENATAL</a></li>
-                    <li><a href="Signosdealarma.html">SIGNOS DE ALARMA</a></li>
-                    <li><a href="anemia.html">ANEMIA EN LA GESTACIÓN</a></li>
-                    <li><a href="psicoprofilaxis.html">PSICOPROFILAXIS EN LA GESTACIÓN</a></li>
-                </ul>
-            </nav>
         </div>
+        <button class="button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav">
+            <ul class="ul">
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="controlPrenatal.html">CONTROL PRENATAL</a></li>
+                <li><a href="Signosdealarma.html">SIGNOS DE ALARMA</a></li>
+                <li><a href="anemia.html">ANEMIA EN LA GESTACIÓN</a></li>
+                <li><a href="psicoprofilaxis.html">PSICOPROFILAXIS EN LA GESTACIÓN</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="intro">
+    <div class="intro">
         <img src="img/anemia/Fondo1.jpg" alt="">
         <div class="textoIntro">
             <h1>Anemia en la gestación</h1>
         </div>
-    </section>
+    </div>
     <main>
         <section>
             <h2>Los controles regulares ayudan a:</h2>
@@ -52,25 +59,27 @@
             </div>
         </section>
         <section class="divisor1">
-            <p>El control prenatal es importante incluso en embarazos saludables.</p>
-            <img class ="fotografia1" src="img/anemia/fotografia1.jpg" alt="">
+            <div>
+                <p>El control prenatal es importante incluso en embarazos saludables.</p>
+                <img class="fotografia1" src="img/anemia/fotografiaEditada1.jpg" alt="">
+            </div>
         </section>
         <section>
             <h2>¿Cuando realizar tus descartes de anemia durante el embarazo?</h2>
             <div class="anemia">
-                <div>
+                <div class="anemiatarj1">
                     <img src="img/anemia/tarjeta1.png" alt="">
                     <p>Apenas confirma tu embarazo.</p>
                 </div>
-                <div>
+                <div class="anemiatarj2">
                     <img src="img/anemia/tarjeta2.png" alt="">
                     <p>3 meses después de tu primer descarte.</p>
                 </div>
-                <div>
+                <div class="anemiatarj3">
                     <img src="img/anemia/tarjeta3.png" alt="">
                     <p>Antes del parto.</p>
                 </div>
-                <div>
+                <div class="anemiatarj4">
                     <img src="img/anemia/tarjeta4.png" alt="">
                     <p>30 días después del parto.</p>
                 </div>
@@ -100,7 +109,7 @@
                 <div class="pruebaDescartePositivo">
                     <h3>Descarte positivo y con anemia</h3>
                     <div>
-                        <p>Sigue las recomendaciones del  personal de salud y asiste a
+                        <p>Sigue las recomendaciones del personal de salud y asiste a
                             tus controles en el establecimiento de salud.</p>
                         <img src="img/anemia/icono5.png" alt="">
                         <p>Recuerda que cuidarte ahora es doblemente impotante,
@@ -114,20 +123,28 @@
             <div class="cuidarAlimentacion">
                 <img src="img/anemia/tarjeta5.png" alt="">
                 <div class="alimentacion">
-                <div><p>Evita tomar los suplementos
-                    de hierro con manzanilla, té,
-                    u otras infusiones.</p></div>
-                <div><p>Toma tus suplementos con agua,
-                    juego de naranja,
-                    limonada, camu camu, u otros
-                    frutas ricas en vitamina c.</p></div>
-                <div><p>Priorizar los alimentos
-                    de origen animal ricos en
-                    hierro como: sangrecita,
-                    bazo, bofe y pescado.</p></div>
-                <div><p>Durante el embarazo y
-                    el puerperio debes recibir
-                    consejería nutricional.</p></div>
+                    <div>
+                        <p>Evita tomar los suplementos
+                            de hierro con manzanilla, té,
+                            u otras infusiones.</p>
+                    </div>
+                    <div>
+                        <p>Toma tus suplementos con agua,
+                            juego de naranja,
+                            limonada, camu camu, u otros
+                            frutas ricas en vitamina c.</p>
+                    </div>
+                    <div>
+                        <p>Priorizar los alimentos
+                            de origen animal ricos en
+                            hierro como: sangrecita,
+                            bazo, bofe y pescado.</p>
+                    </div>
+                    <div>
+                        <p>Durante el embarazo y
+                            el puerperio debes recibir
+                            consejería nutricional.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -150,29 +167,31 @@
     <footer>
         <div class="footerContenido">
             <div>
-                <p>Para más información sobre:<p>
+                <p>Para más información sobre:
+                <p>
                 <p class="footerTitulo">Maternidad saludable, segura y voluntaria</p>
                 <hr width="100%">
-                <button>Llamar gratis <i class="fa-solid fa-phone"></i> al 113</button>
+                <button class="buttonCall">Llamar gratis <i class="fa-solid fa-phone"></i> al 113</button>
             </div>
             <div>
                 <hr width="100%">
-                <p>Oficina de Gestión de Tecnología de la Información</p> 
+                <p>Oficina de Gestión de Tecnología de la Información</p>
                 <hr width="100%">
                 <p>Área de Desarrollo de Sistemas</p>
             </div>
             <div>
                 <hr width="100%">
-               <p> Central Telefónica: <br>
-                (+51) 477 5360 <br>
-                (+51) 477 5770 <br>
-                (+51) 477 3077<br>
-                Opción " 0 "<br>
-                ó Anexo 2191 </p>
+                <p> Central Telefónica: <br>
+                    (+51) 477 5360 <br>
+                    (+51) 477 5770 <br>
+                    (+51) 477 3077<br>
+                    Opción " 0 "<br>
+                    ó Anexo 2191 </p>
             </div>
         </div>
         <hr width="100%">
         <p>©Todos los derechos reservados 2022</p>
     </footer>
 </body>
+
 </html>

@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-desarrollo-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giolujan/CODERHOUSE-SMATERNAPERINATAL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giolujan/CODERHOUSE-SMATERNAPERINATAL/issues"
+  },
+  "homepage": "https://github.com/giolujan/CODERHOUSE-SMATERNAPERINATAL#readme"
+}

@@ -1,0 +1,55 @@
+.divisor, .divisor1 {
+
+    height: 600px;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        margin: 0 100px;
+        overflow: hidden;
+
+        p {
+            width: 600px;
+            padding: 10px 10px;
+            font-size: 45px;
+            line-height: 50px;
+            color: rgba(252, 249, 244, 1);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+.divisor {
+    background-color: rgba(255, 181, 184, 1);
+}
+
+.divisor1 {
+    background-color: rgba(164, 232, 224, 1);
+}
+
+@media screen and (max-width:480px) {
+    .divisor, .divisor1 {
+        height: 200px;
+
+        div {
+            flex-direction: column;
+            text-align: center;
+    
+            p {
+                width: 400px;
+                padding: 20px;
+                font-size: 30px;
+                line-height: 32px;
+            }
+    
+            img {
+                display: none;
+            }
+        }
+    }
+}

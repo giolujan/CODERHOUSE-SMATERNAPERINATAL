@@ -4,49 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" type="module"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="menu">
+        <div class="logo">
             <a href="index.html"><img src="img/minsa.png" alt="Minsa"></a>
-            <nav>
-                <ul>
-                    <li><a href="inicio.html">INICIO</a></li>
-                    <li><a href="controlPrenatal.html">CONTROL PRENATAL</a></li>
-                    <li><a href="Signosdealarma.html">SIGNOS DE ALARMA</a></li>
-                    <li><a href="anemia.html">ANEMIA EN LA GESTACIÓN</a></li>
-                    <li><a href="psicoprofilaxis.html">PSICOPROFILAXIS EN LA GESTACIÓN</a></li>
-                </ul>
-            </nav>
         </div>
+        <button class="button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav">
+            <ul class="ul">
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="controlPrenatal.html">CONTROL PRENATAL</a></li>
+                <li><a href="Signosdealarma.html">SIGNOS DE ALARMA</a></li>
+                <li><a href="anemia.html">ANEMIA EN LA GESTACIÓN</a></li>
+                <li><a href="psicoprofilaxis.html">PSICOPROFILAXIS EN LA GESTACIÓN</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="intro">
+    <div class="intro">
         <img src="img/alarma/Fondo1.jpg" alt="">
         <div class="textoIntro">
             <h1>Signos de alarma en la gestación</h1>
         </div>
-    </section>
+    </div>
     <main>
         <section>
             <h2>¿Sabes cuáles son los signos de alarma que ponen en peligro tu embarazo?</h2>
-            <div class="signoalarma1">
+            <div class="signoalarma">
                 <img src="img/alarma/c1icono1.png" alt="">
                 <div>
                     <p>Informa inmediatamente a tu médico tratante si tienes:</p>
-                    <div class="tarjeta1">
+                    <div class="signoalarmatarjeta">
                         <button class="botonFlecha"><span class="material-symbols-outlined">arrow_back_ios</span></button>
-                        <div>
+                        <div class="sigaltarj1">
                             <img src="img/alarma/c1icono2.png" alt="">
                             <p>Vómitos persistentes.</p>
                         </div>
-                        <div>
+                        <div class="sigaltarj2">
                             <img src="img/alarma/c1icono3.png" alt="">
                             <p>Si tu bebé no se mueve o lo hace menos de lo normal.</p>
                         </div>
-                        <div>
+                        <div class="sigaltarj3">
                             <img src="img/alarma/c1icono4.png" alt="">
                             <p>Pérdida de líquido o sangre por vía vaginal.</p>
                         </div>
@@ -56,26 +60,28 @@
             </div>
         </section>
         <section class="divisor1">
-            <img src="img/alarma/fotografia1.jpg" alt="">
-            <p>La maternidad es una etapa de gran ilusión,
-                pero también de gran vulnerabilidad para la madre y el bebé.</p>
+            <div>
+                <img src="img/alarma/fotografiaEditada1.jpg" alt="">
+                <p>La maternidad es una etapa de gran ilusión,
+                    pero también de gran vulnerabilidad para la madre y el bebé.</p>
+            </div>
         </section>
         <section>
-            <div class="signoalarma1">
+            <div class="signoalarma">
                 <img src="img/alarma/c2icono1.png" alt="">
                 <div>
                     <p>Acude inmediatamente al establecimiento de salud más cercano, si presentas:</p>
-                    <div class="tarjeta1">
+                    <div class="signoalarmatarjeta">
                         <button class="botonFlecha"><span class="material-symbols-outlined">arrow_back_ios</span></button>
-                        <div>
+                        <div class="sigaltarj1">
                             <img src="img/alarma/c2icono2.png" alt="">
                             <p>Sangrado abundante o con mal olor.</p>
                         </div>
-                        <div>
+                        <div class="sigaltarj2">
                             <img src="img/alarma/c2icono3.png" alt="">
                             <p>Desmayos o pérdida de la conciencia.</p>
                         </div>
-                        <div>
+                        <div class="sigaltarj3">
                             <img src="img/alarma/c2icono4.png" alt="">
                             <p>Dolor en las mamas.</p>
                         </div>
@@ -85,8 +91,10 @@
             </div>
         </section>
         <section class="divisor">
-            <p>No debe automedicarse.</p>
-            <img src="img/alarma/fotografia2.jpg" alt="">
+            <div>
+                <p>No debe automedicarse.</p>
+                <img src="img/alarma/fotografiaEditada2.jpg" alt="">
+            </div>
         </section>
         <section class="PreguntasFrecuentes">
             <h2>Preguntas frecuentes</h2>
@@ -110,7 +118,7 @@
                 <p>Para más información sobre:<p>
                 <p class="footerTitulo">Maternidad saludable, segura y voluntaria</p>
                 <hr width="100%">
-                <button>Llamar gratis <i class="fa-solid fa-phone"></i> al 113</button>
+                <button class="buttonCall">Llamar gratis <i class="fa-solid fa-phone"></i> al 113</button>
             </div>
             <div>
                 <hr width="100%">

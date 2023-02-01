@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    background-color: rgba(209, 100, 181, 1);
+    background-color: nth($bg-color, 1);
     padding: 1em;
 
     display: flex;
@@ -25,10 +25,7 @@ header {
         }
     }
     nav {
-        text-decoration: none;
-                color: aliceblue;
-                font-weight: bold;
-                list-style: none;
+        
         ul {
             display: flex;
             flex-flow: row nowrap;
