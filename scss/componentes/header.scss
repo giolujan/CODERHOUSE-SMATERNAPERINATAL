@@ -1,75 +1,27 @@
-header {
-    width: 100%;
-    background-color: nth($bg-color, 1);
+.navbar-color {
     padding: 1em;
+    background-color: nth($bg-color, 1);
+}
 
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+.nav-link-text {
+    color: rgba(224, 223, 225, 1);
+    font-weight: normal;
+}
 
+.navbar-nav, .nav-link.active {
+    font-weight: bold;
+    --bs-emphasis-color-rgb: white;
+    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
     color: white;
-    div{
-        img {
-            width: 240px;
-            padding: 60px 0 10px 0;
-        }
-    }   
-    button {
-        display: none;
-        cursor: pointer;
-        i {
-            width: 2em;
-            height: 2em;
-            color: white;
-        }
-    }
-    nav {
-        
-        ul {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: flex-end;
-            align-items: center;
-            li {
-                margin: 0 .5em;
-                text-decoration: none;
-                color: aliceblue;
-                font-weight: bold;
-                list-style: none;
-            }
-        }
+
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+}
+
+.navbar-brand {
+    img {
+        width: 150px;
+        height: auto;
     }
 }
 
-@media screen and (max-width:480px) {
-    header {
-
-        div{
-            
-            a {
-    
-            }
-        }   
-        button {
-           display: block;
-            i {
-    
-            }
-        }
-        nav {
-            width: 100%;
-            display: none;
-            ul {
-                flex-direction: column;
-                li {
-                   margin: 1em 0; 
-                }
-            }
-        }
-    }
-}
-
-.activo {
-    display: block;
-}

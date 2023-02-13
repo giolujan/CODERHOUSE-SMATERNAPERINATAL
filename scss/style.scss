@@ -8,25 +8,39 @@ body {
     font-family: 'Arimo', sans-serif;
 }
 
-hr {
-    border: 1px solid white;
-    opacity: 0.7;
-    margin: 5px 0;
-}
-
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 1em 0;
+    
+    h2 {
+        font-size: 35px;
+        color: rgba(133, 133, 133, 1);
+        padding: 40px 0px 5px 0px;
+    }
+
+    hr {
+        border: 1px solid rgba(133, 133, 133, 1);
+        margin: 0px 0px 40px 0px;
+    }
 }
 
-h2 {
-    font-size: 35px;
-    padding: 20px;
+.registrate {
+    display: flex;
+    align-items: center;
+    width: 800px;
 }
 
+@media screen and (max-width:480px) {
+    .registrate {
+        width: 350px;
+        div {
+            justify-content: center;
+        }
+    }
+}
 
 h3 {
     font-size: 20px;
@@ -407,6 +421,7 @@ p {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 
 //base
 @import './componentes/variables.scss';

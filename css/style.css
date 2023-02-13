@@ -8,12 +8,6 @@ body {
   font-family: "Arimo", sans-serif;
 }
 
-hr {
-  border: 1px solid white;
-  opacity: 0.7;
-  margin: 5px 0;
-}
-
 section {
   display: flex;
   flex-direction: column;
@@ -21,12 +15,30 @@ section {
   text-align: center;
   margin: 1em 0;
 }
-
-h2 {
+section h2 {
   font-size: 35px;
-  padding: 20px;
+  color: rgb(133, 133, 133);
+  padding: 40px 0px 5px 0px;
+}
+section hr {
+  border: 1px solid rgb(133, 133, 133);
+  margin: 0px 0px 40px 0px;
 }
 
+.registrate {
+  display: flex;
+  align-items: center;
+  width: 800px;
+}
+
+@media screen and (max-width: 480px) {
+  .registrate {
+    width: 350px;
+  }
+  .registrate div {
+    justify-content: center;
+  }
+}
 h3 {
   font-size: 20px;
 }
@@ -371,60 +383,28 @@ p {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-header {
-  width: 100%;
-  background-color: rgb(209, 100, 181);
+.navbar-color {
   padding: 1em;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-}
-header div img {
-  width: 240px;
-  padding: 60px 0 10px 0;
-}
-header button {
-  display: none;
-  cursor: pointer;
-}
-header button i {
-  width: 2em;
-  height: 2em;
-  color: white;
-}
-header nav ul {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: center;
-}
-header nav ul li {
-  margin: 0 0.5em;
-  text-decoration: none;
-  color: aliceblue;
-  font-weight: bold;
-  list-style: none;
+  background-color: rgb(209, 100, 181);
 }
 
-@media screen and (max-width: 480px) {
-  header button {
-    display: block;
-  }
-  header nav {
-    width: 100%;
-    display: none;
-  }
-  header nav ul {
-    flex-direction: column;
-  }
-  header nav ul li {
-    margin: 1em 0;
-  }
+.nav-link-text {
+  color: rgb(224, 223, 225);
+  font-weight: normal;
 }
-.activo {
-  display: block;
+
+.navbar-nav, .nav-link.active {
+  font-weight: bold;
+  --bs-emphasis-color-rgb: white;
+  --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  color: white;
+  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+}
+
+.navbar-brand img {
+  width: 150px;
+  height: auto;
 }
 
 footer {
@@ -444,6 +424,11 @@ footer .footerContenido div {
   width: 500px;
   text-align: left;
   padding: 1em;
+}
+footer hr {
+  border: 1px solid white;
+  opacity: 0.7;
+  margin: 5px 0;
 }
 
 .buttonCall {
@@ -479,6 +464,10 @@ footer .footerContenido div {
 }
 
 .intro img {
+  min-width: 100%;
+}
+
+.intro-img {
   max-width: 100%;
 }
 
@@ -618,9 +607,15 @@ footer .footerContenido div {
 
 .PreguntasFrecuentes div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 1000px;
 }
 
+@media screen and (max-width: 480px) {
+  .PreguntasFrecuentes div {
+    width: auto;
+  }
+}
 .divisor, .divisor1 {
   height: 600px;
 }

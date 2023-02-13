@@ -5,29 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="main.js" type="module"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="./css/style.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    
+    <title>SaludMaternayPerinatal</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="img/minsa.png" alt="Minsa"></a>
-        </div>
-        <button class="button">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <nav class="nav">
-            <ul class="ul">
-                <li><a href="inicio.html">INICIO</a></li>
-                <li><a href="controlPrenatal.html">CONTROL PRENATAL</a></li>
-                <li><a href="Signosdealarma.html">SIGNOS DE ALARMA</a></li>
-                <li><a href="anemia.html">ANEMIA EN LA GESTACIÓN</a></li>
-                <li><a href="psicoprofilaxis.html">PSICOPROFILAXIS EN LA GESTACIÓN</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/minsa.png" alt="Minsa" width="30" height="24"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link nav-link-text" aria-current="page" href="inicio.html">INICIO</a>
+                        <a class="nav-link active nav-link-text" href="controlPrenatal.html">CONTROL PRENATAL</a>
+                        <a class="nav-link nav-link-text" href="Signosdealarma.html">SIGNOS DE ALARMA</a>
+                        <a class="nav-link nav-link-text" href="anemia.html">ANEMIA EN LA GESTACIÓN</a>
+                        <a class="nav-link nav-link-text" href="psicoprofilaxis.html">PSICOPROFILAXIS EN LA GESTACIÓN</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="intro">
@@ -39,6 +45,7 @@
     <main>
         <section>
             <h2>¿Qué es el control prenatal?</h2>
+            <hr width="70%">
             <div class="s1ControlPrenatal">
                 <img src="img/control/icono1.png" alt="">
                 <div>
@@ -54,6 +61,7 @@
         </section>
         <section>
             <h2>Objetivos</h2>
+            <hr width="70%">
             <div class="objetivos">
                 <div>
                     <h5>1</h5><br>
@@ -89,6 +97,7 @@
         </section>
         <section>
             <h2>Los controles regulares ayudan a:</h2>
+            <hr width="70%">
             <div class="controles">
                 <div>
                     <span class="material-symbols-outlined">check_circle</span>
@@ -116,6 +125,7 @@
         </section>
         <section>
             <h2>Consultas prenatales</h2>
+            <hr width="70%">
             <div class="consultas">
                 <div class="consulta1ra">
                     <h4>1ra. consulta</h4>
@@ -152,19 +162,40 @@
         </section>
         <section>
             <h2>Preguntas frecuentes</h2>
+            <hr width="70%">
             <div class="PreguntasFrecuentes">
-                <div>
-                    <h3>¿Cuántos controles prenatales debe tener una gestante?</h3>
-                    <span class="material-symbols-outlined">expand_more</span>
-                </div>
-                <div>
-                    <h3>¿Qué incluye una cita de control prenatal?</h3>
-                    <span class="material-symbols-outlined">expand_more</span>
-                </div>
-                <div>
-                    <h3>¿Cuántas semanas son en el primer trimestre de embarazo?</h3>
-                    <span class="material-symbols-outlined">expand_more</span>
-                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ¿Cuántos controles prenatales debe tener una gestante? 
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">El modelo de atención prenatal con un mínimo de ocho contactos recomendado para reducir la mortalidad perinatal y mejorar la experiencia de las mujeres con la atención...</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            ¿Qué incluye una cita de control prenatal? 
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">El médico te realiza un chequeo de salud completo, que por lo general incluye un examen físico y análisis de sangre y orina para asegurarse...</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            ¿Cuántas semanas son en el primer trimestre de embarazo? 
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Los cambios hormonales afectan prácticamente a todos los sistemas de órganos. Estos cambios pueden manifestar síntomas incluso en las primeras semanas de embarazo...</div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </section>
     </main>

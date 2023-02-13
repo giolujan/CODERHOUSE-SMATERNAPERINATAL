@@ -5,39 +5,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#606d47">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <script src="main.js" type="module"></script>
     <script src="https://kit.fontawesome.com/cc5977bcf1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <title>SaludMaternayPerinatal</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="img/minsa.png" alt="Minsa"></a>
-        </div>
-        <button class="button">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <nav class="nav">
-            <ul class="ul">
-                <li><a href="inicio.html">INICIO</a></li>
-                <li><a href="controlPrenatal.html">CONTROL PRENATAL</a></li>
-                <li><a href="Signosdealarma.html">SIGNOS DE ALARMA</a></li>
-                <li><a href="anemia.html">ANEMIA EN LA GESTACIÓN</a></li>
-                <li><a href="psicoprofilaxis.html">PSICOPROFILAXIS EN LA GESTACIÓN</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/minsa.png" alt="Minsa" width="30"
+                        height="24"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link nav-link-text" aria-current="page" href="inicio.html">INICIO</a>
+                        <a class="nav-link nav-link-text" href="controlPrenatal.html">CONTROL PRENATAL</a>
+                        <a class="nav-link nav-link-text" href="Signosdealarma.html">SIGNOS DE ALARMA</a>
+                        <a class="nav-link nav-link-text" href="anemia.html">ANEMIA EN LA GESTACIÓN</a>
+                        <a class="nav-link nav-link-text" href="psicoprofilaxis.html">PSICOPROFILAXIS EN LA
+                            GESTACIÓN</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="intro">
-        <img src="img/Fondo1.jpg" alt="">
+        <img class="intro-img" src="img/Fondo1.jpg" alt="">
         <div class="textoIntro">
             <h1>Salud Materna y Perinatal</h1>
         </div>
     </div>
+    <main>
+        <section>
+            <h2>Registrate</h2>
+            <hr width="70%">
+            <div class="registrate">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Av. ...">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Departamento</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Lima Metropolitana">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Distrito</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Selecciona</option>
+                            <option>Ancón</option>
+                            <option> Ate</option>
+                            <option> Barranco</option>
+                            <option>Breña</option>
+                            <option>Carabayllo</option>
+                            <option>Cercado de Lima</option>
+                            <option>Chaclacayo</option>
+                            <option>Chorrillos</option>
+                            <option>Cieneguilla</option>
+                            <option> Comas</option>
+                            <option>El agustino</option>
+                            <option>Independencia</option>
+                            <option>Jesús maría</option>
+                            <option>La molina</option>
+                            <option>La victoria</option>
+                            <option>Lince</option>
+                            <option> Los olivos </option>
+                            <option> Lurigancho </option>
+                            <option> Lurín </option>
+                            <option> Magdalena del mar </option>
+                            <option> Miraflores </option>
+                            <option> Pachacámac </option>
+                            <option> Pucusana </option>
+                            <option> Pueblo libre </option>
+                            <option> Puente piedra </option>
+                            <option> Punta hermosa </option>
+                            <option> Punta negra </option>
+                            <option> Rímac </option>
+                            <option> San bartolo </option>
+                            <option> San borja </option>
+                            <option> San isidro </option>
+                            <option> San Juan de Lurigancho </option>
+                            <option> San Juan de Miraflores </option>
+                            <option> San Luis </option>
+                            <option> San Martin de Porres </option>
+                            <option> San Miguel </option>
+                            <option> Santa Anita </option>
+                            <option> Santa María del Mar </option>
+                            <option> Santa Rosa </option>
+                            <option> Santiago de Surco </option>
+                            <option> Surquillo </option>
+                            <option> Villa el Salvador </option>
+                            <option> Villa Maria del Triunfo</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">DIRIS</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Suscribete
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Registrate</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="footerContenido">
             <div>
@@ -45,7 +148,7 @@
                 <p>
                 <p class="footerTitulo">Maternidad saludable, segura y voluntaria</p>
                 <hr width="100%">
-                <button class="buttonCall">Llamar gratis  <i class="fa-solid fa-phone"></i>  al 113</button>
+                <button class="buttonCall">Llamar gratis <i class="fa-solid fa-phone"></i> al 113</button>
             </div>
             <div>
                 <hr width="100%">

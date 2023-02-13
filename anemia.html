@@ -5,29 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <script src="main.js" type="module"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="./css/style.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <title>SaludMaternayPerinatal</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="img/minsa.png" alt="Minsa"></a>
-        </div>
-        <button class="button">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <nav class="nav">
-            <ul class="ul">
-                <li><a href="inicio.html">INICIO</a></li>
-                <li><a href="controlPrenatal.html">CONTROL PRENATAL</a></li>
-                <li><a href="Signosdealarma.html">SIGNOS DE ALARMA</a></li>
-                <li><a href="anemia.html">ANEMIA EN LA GESTACIÓN</a></li>
-                <li><a href="psicoprofilaxis.html">PSICOPROFILAXIS EN LA GESTACIÓN</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/minsa.png" alt="Minsa" width="30" height="24"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link nav-link-text" aria-current="page" href="inicio.html">INICIO</a>
+                        <a class="nav-link nav-link-text" href="controlPrenatal.html">CONTROL PRENATAL</a>
+                        <a class="nav-link nav-link-text" href="Signosdealarma.html">SIGNOS DE ALARMA</a>
+                        <a class="nav-link active nav-link-text" href="anemia.html">ANEMIA EN LA GESTACIÓN</a>
+                        <a class="nav-link nav-link-text" href="psicoprofilaxis.html">PSICOPROFILAXIS EN LA GESTACIÓN</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="intro">
@@ -39,6 +47,7 @@
     <main>
         <section>
             <h2>Los controles regulares ayudan a:</h2>
+            <hr width="70%">
             <div class="controlRegular">
                 <div>
                     <img class="controlRegularImg" src="img/anemia/icono1.png" alt="">
@@ -66,6 +75,7 @@
         </section>
         <section>
             <h2>¿Cuando realizar tus descartes de anemia durante el embarazo?</h2>
+            <hr width="70%">
             <div class="anemia">
                 <div class="anemiatarj1">
                     <img src="img/anemia/tarjeta1.png" alt="">
@@ -87,6 +97,7 @@
         </section>
         <section>
             <h2>¿Qué hacer?</h2>
+            <hr width="70%">
             <div class="pruebaDescarte">
                 <div class="pruebaDescarteNegativa">
                     <h3>Descarte negativo y sin anemia</h3>
@@ -120,6 +131,7 @@
         </section>
         <section>
             <h2>¿Comó cuidar tu alimentación durante el embarazo?</h2>
+            <hr width="70%">
             <div class="cuidarAlimentacion">
                 <img src="img/anemia/tarjeta5.png" alt="">
                 <div class="alimentacion">
@@ -148,19 +160,42 @@
                 </div>
             </div>
         </section>
-        <section class="PreguntasFrecuentes">
+        <section>
             <h2>Preguntas frecuentes</h2>
-            <div>
-                <h3>¿Qué hacer para combatir la anemia en el embarazo?</h3>
-                <span class="material-symbols-outlined">expand_more</span>
-            </div>
-            <div>
-                <h3>¿Qué comer para subir el hierro en el embarazo?</h3>
-                <span class="material-symbols-outlined">expand_more</span>
-            </div>
-            <div>
-                <h3>¿Qué tiene que ver el agua con la anemia?</h3>
-                <span class="material-symbols-outlined">expand_more</span>
+            <hr width="70%">
+            <div class="PreguntasFrecuentes">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ¿Qué hacer para combatir la anemia en el embarazo?  
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Tomar una vitamina prenatal que contenga hierro puede ayudar a prevenir y tratar la anemia por deficiencia de hierro durante el embarazo...</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            ¿Qué comer para subir el hierro en el embarazo? 
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Buenas fuentes: La carne roja magra, la carne de aves y el pescado son buenas fuentes de hierro...</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            ¿Qué tiene que ver el agua con la anemia? 
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Según Hidalgo, antes que tomar suplementos de hierro o comer alimentos ricos en este mineral, la gente debería de tener agua potable...</div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </section>
     </main>
