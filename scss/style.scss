@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+//base
+@import './componentes/variables.scss';
+
 body {
     font-family: 'Arimo', sans-serif;
 }
@@ -13,17 +16,33 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 1em 0;
-    
+    margin: 100px 0;
+
     h2 {
-        font-size: 35px;
         color: rgba(133, 133, 133, 1);
-        padding: 40px 0px 5px 0px;
+        padding: 0px 0px 5px 0px;
+        font-family: 'Domine', serif;
+        font-size: 35px;
+        font-weight: 500;
     }
 
     hr {
         border: 1px solid rgba(133, 133, 133, 1);
         margin: 0px 0px 40px 0px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    section {
+        margin: 50px 0;
+
+        h2 {
+            font-size: nth($bg-font-mobile, 5);
+
+            hr {
+                margin: 0px 0px 30px 0px;
+            }
+        }
     }
 }
 
@@ -36,6 +55,7 @@ section {
 @media screen and (max-width:480px) {
     .registrate {
         width: 350px;
+
         div {
             justify-content: center;
         }
@@ -43,12 +63,24 @@ section {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: nth($bg-font, 3);
+    font-weight: 600;
 }
 
 p {
-    font-size: 14px;
+    font-size: nth($bg-font, 1);
     line-height: 16px;
+}
+
+@media screen and (max-width:480px) {
+    h3 {
+        font-size: nth($bg-font-mobile, 3);
+    }
+
+    p {
+        font-size: nth($bg-font-mobile, 1);
+        line-height: 16px;
+    }
 }
 
 .s1ControlPrenatal,
@@ -384,7 +416,7 @@ p {
     }
 
     .alimentacion {
-        
+
         align-items: center;
         grid-template-columns: repeat(1, 1fr);
     }
@@ -393,26 +425,28 @@ p {
 .beneficios {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
     div {
         display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-    width: 200px;
-    height: 200px;
-    background-color: rgba(252, 249, 244, 1);
-    border: 1px solid rgba(223, 177, 96, 1);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(252, 249, 244, 1);
+        border: 1px solid rgba(223, 177, 96, 1);
 
-    img {
-        padding: 20px 0px;
-        width: 50px;
-    }
-    p {
+        img {
+            padding: 20px 0px;
+            width: 50px;
+        }
 
-        padding: 10px 0px;
-    }
+        p {
+
+            padding: 10px 0px;
+        }
     }
 }
 
@@ -423,8 +457,6 @@ p {
 }
 
 
-//base
-@import './componentes/variables.scss';
 
 //componentes
 @import './componentes/header.scss';

@@ -4,10 +4,9 @@
     flex-direction: row;
     align-items: center;
 
-    div {
-        width: 300px;
+    .contenedor {
+        width: 350px;
         height: 400px;
-        border-radius: 15px;
         overflow: hidden;
         margin: 0px 10px;
         background-color: rgba(240, 243, 244, 1);
@@ -21,7 +20,7 @@
 
             img {
                 position: relative;
-                max-width: 100%;
+                width: 100%;
             }
         }
 
@@ -34,27 +33,9 @@
     }
 }
 
-.contenedor1, .contenedor3 {
+.cont-1,
+.cont-3 {
     display: block;
-}
-
-@media screen and (max-width:480px) {
-    .contenedor1, .contenedor3 {
-        display: none;
-    }
-
-    .actividades,
-.noticias {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    div {
-        width: 200px;
-        height: 450px;
-
-    }
-}
 }
 
 .botonFlecha {
@@ -75,10 +56,12 @@
 .contenedorBoton {
     position: absolute;
     margin: 10px 20px;
-    width: 80px;
+    width: 100px;
     height: 30px;
     background-color: rgba(165, 128, 206, 1);
+    font-size: nth($bg-font, 2);
     font-weight: 600;
+    border-radius: 3px;
     border: none;
     color: white;
 }
@@ -87,4 +70,36 @@
 .botonFlecha:hover {
     cursor: pointer;
     background-color: black;
+}
+
+@media screen and (max-width:480px) {
+
+    .cont-1,
+    .cont-3 {
+        display: none;
+    }
+
+    .actividades,
+    .noticias {
+        .contenedor {
+            width: 220px;
+            height: 350px;
+
+            div {
+                height: 120px;
+            }
+
+            .contenedorTitulo,
+            .contenedorDescripcion,
+            .contenedorFecha {
+                margin: 10px 15px;
+            }
+
+        }
+    }
+
+    .botonFlecha {
+        width: 40px;
+        height: 40px;
+    }
 }

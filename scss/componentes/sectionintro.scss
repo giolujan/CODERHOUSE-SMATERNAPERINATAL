@@ -1,17 +1,18 @@
 .intro {
     position: relative;
     display: block;
-    align-items: center;
     max-width: 100%;
     max-height: 600px;
     overflow: hidden;
 }
 
-.intro img {
+.intro-imgs {
+    filter: brightness(60%);
     min-width: 100%;
 }
 
 .intro-img {
+    filter: brightness(60%);
     max-width: 100%;
 }
 
@@ -23,6 +24,7 @@
   }
 
 .textoIntro h1 {
+    font-family: 'Domine', serif;
     font-size: 50px;
     font-weight: 700;
     color: #FFF;
@@ -37,30 +39,34 @@
 
 @media screen and (max-width:480px) {
     .intro {
-        position: relative;
-        display: block;
-        align-items: center;
-        max-width: 100%;
-        max-height: 600px;
-        overflow: hidden;
+        height: 500px;
     }
     
-    .intro img {
-        width: 100%;
+    .intro-img {
+        height: 100%;
+        margin-left: -150px;
+        max-width: none;
     }
-    
+
+    .intro-imgs {
+        height: 100%;
+        margin-left: -400px;
+    }
+
     .textoIntro {
-        top: 10px;
-        left: 10px;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 25px;
+        left: 25px;
       }
     
     .textoIntro h1 {
-        font-size: 20px;
+        font-size: nth($bg-font-mobile , 5);
     }
     
     .opcionesIntro {
         margin: 10px 0px;
-        font-size: 15px;
+        font-size: nth($bg-font-mobile , 2);
     }
 }
